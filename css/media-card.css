@@ -1,5 +1,5 @@
 @media screen and (max-width: 1000px) {
-  .all__categories-elem {
-    height: 100px
+    .all__categories-list {
+      top: -25px;
+    }
   }
-}
