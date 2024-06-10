@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Динамические карточки услуг</title>
+<link rel="stylesheet" href="css/cards.css"> <!-- Убедитесь, что стили подключены правильно -->
+</head>
+<body>
+
+    <header class="header">
+        <div class="header_flex">
+            <div class="header_img">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header_contact">
+                <div class="contact_number">
+                    <a href="error.html" class="contact_number_link">8(800)-201-97-05</a>
+                </div>
+                <div class="contact_consult">
+                    <a class="js-modal_button contact_consult_link button-modal-open" href="error.html">Получить консультацию</a>
+                </div>
+            </div>
+            <div class="header_nav">
+                <div class="nav_services">
+                    <a href="card.html" class="nav_services_link">Услуги</a>
+                </div>
+                <div class="nav_cases">
+                    <a href="error.html" class="nav_cases_link">Кейсы</a>
+                </div>
+                <div class="nav_faq">
+                    <a href="error.html" class="nav_faq_link">FAQ</a>
+                </div>
+            </div>
+            <div class="header_hamburger">
+                <input id="hamburger_check" type="checkbox" class="hamburger_check">
+                <label for="hamburger_check" class="hamburger_label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="hamburger">
+                    <div class="hamburger_sidebg"></div>
+                    <div class="hamburger_bg">
+                        <div class="hamburger_column_links">
+                            <div class="column_links_services">
+                                <a href="error.html" class="column_link" href="">Услуги</a>
+                            </div>
+                            <div class="column_links_cases">
+                                <a href="error.html" class="column_link" href="">Кейсы</a>
+                            </div>
+                            <div class="column_links_faq">
+                                <a href="error.html" class="column_link" href="">FAQ</a>
+                            </div>
+                        </div>
+                        <div class="hamburger_column_contacts">
+                            <div class="hamburger_contacts_block">
+                                <div class="contacts_block_title">Наши контакты:</div>
+                                <div>
+                                    <a class="contacts_block_link" href="error.html">example@iphub.com</a>
+                                </div>
+                                <div>
+                                    <a class="contacts_block_link" href="error.html">+7 (888) 888 88 88</a>
+                                </div>
+                                <div>
+                                    <a class="contacts_block_link email_scheme mb5" href="error.html">Схема проезда</a>
+                                </div>
+                            </div>
+                            <div class="hamburger_contacts_block social">
+                                <div class="contacts_block_title">Мы в соцсетях:</div>
+                                <div>
+                                    <a href="error.html" target="_blank" class="links_block_link">Яндекс.Дзен</a>
+                                </div>
+                                <div>
+                                    <a href="error.html" target="_blank" class="links_block_link">Вконтакте</a>
+                                </div>
+                            </div>
+                            <div class="hamburger_contacts_block adress">
+                                <div class="contacts_block_title">Как добраться:</div>
+                                <div>
+                                    <a class="contacts_block_link adress_scheme mb5" href="">Схема проезда</a>
+                                </div>
+                                <div class="contacts_block_adress">123317, г. Москва, Пресненская наб., д.
+                                    8, стр. 1, эт. 3, п. 1, оф. 10</div>
+                                <div class="contacts_block_requisites">
+                                    <div class="contacts_block_requisites_inn">ИНН: 7703472433</div>
+                                    <div class="contacts_block_requisites_kpp">КПП: 770301001</div>
+                                </div>
+                            </div>
+                            <div class="hamburger_img_wrapper">
+                            <div class="hamburger_img">
+                            <img src="/img/Burger1000.png">
+                        </div>
+                        
+                    </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+<section class="main">
+    <div class="container">
+<div class="all__search-container">
+  <div class="all__search-wrapper">
+    <input type="text" id="searchInput" class="all__search" placeholder="Начните вводить слово">
+  </div>
+  <div class="all__categories">
+    <div class="all__categories-title">Категории</div>
+    <input type="checkbox" id="dropdown">
+    <label for="dropdown" class="categories__dropdown">
+      <div class="categories__dropdown-arrow"></div>
+      <div class="all__categories-list">
+        <div class="all__categories-elem">
+          <input id="all" type="checkbox" checked>
+          <label for="all">Все услуги</label>
+        </div>
+        <div class="all__categories-elem">
+          <input id="signs" data-name="Товарные знаки" type="checkbox">
+          <label for="signs">Товарные знаки</label>
+        </div>
+        <div class="all__categories-elem">
+          <input id="patents" data-name="Патенты" type="checkbox">
+          <label for="patents">Патенты</label>
+        </div>
+        <div class="all__categories-elem">
+          <input id="design" data-name="Дизайн" type="checkbox">
+          <label for="design">Дизайн</label>
+        </div>
+        <div class="all__categories-elem">
+          <input id="it" data-name="ИТ" type="checkbox">
+          <label for="it">ИТ</label>
+        </div>
+        <div class="all__categories-elem">
+          <input id="protection" data-name="Защита" type="checkbox">
+          <label for="protection">Защита</label>
+        </div>
+        <div class="all__categories-elem">
+          <input id="management" data-name="Управление" type="checkbox">
+          <label for="management">Управление</label>
+        </div>
+        <div class="all__categories-elem">
+          <input id="study" data-name="Обучение" type="checkbox">
+          <label for="study">Обучение</label>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+
+<div class="all__content" id="cardsContainer">
+  <!-- Карточки услуг будут сюда добавлены -->
+</div>
+</div>
+</section>
+</section>
+<div class="modal">
+    <div class="modal__overlay"></div>
+    <div class="container">
+        <div class="modal__grid">
+            <div class="modal__text">
+                <h2 class="modal__title">Оставьте заявку на консультацию и мы вам поможем!</h2>
+                <div class="modal__descr">У нас есть решения для всех ваших потребностей в сфере защиты и регистрации интеллектуальной собственности</div>
+                <a href="error.html"><button class="button-consult button-modal-open modal__button" href="error.html">Получить индивидуальную консультацию</button></a>
+            </div>
+            <div class="modal__img-container">
+                <img src="img/62.png" data-depth="0.4" alt="round" class="modal__img">
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_info">
+                <div class="info_block_logo">
+                    <a href="error.html" class="block_logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                    <div class="block_text">
+                        Общество с ограниченной
+                        ответственностью «Центр интеллектуальной собственности и инноваций АйПиХаб»
+                    </div>
+                </div>
+                <div class="info_block_adress">
+                    <div class="block_adress">123317, г. Москва, Пресненская наб., д.
+                        8, стр. 1, эт. 3, п. 1, оф. 10</div>
+                    <div class="block_inn"><span>ИНН:</span> 7703472433</div>
+                    <div class="block_kpp"><span>КПП:</span> 770301001</div>
+                </div>
+            </div>
+            <div class="footer_hr"></div>
+            <div class="footer_links">
+                <div class="links_block">
+                    <div class="links_block_title site_nav">Навигация<span> по сайту</span>:</div>
+                    <div class="links_block_link_wrapper">
+                        <a href="" class="links_block_link">Услуги</a>
+                    </div>
+                    <div class="links_block_link_wrapper">
+                        <a href="error.html" class="links_block_link">Кейсы</a>
+                    </div>
+                    <div class="links_block_link_wrapper">
+                        <a href="error.html" class="links_block_link">FAQ</a>
+                    </div>
+                </div>
+                <div class="links_block">
+                    <div class="links_block_title">Наши контакты:</div>
+                    <div class="links_block_link_wrapper">
+                        <a href="error.html" email class="links_block_link">example@iphub.com</a>
+                    </div>
+                    <div class="links_block_link_wrapper">
+                        <a href="error.html" class="links_block_link">+7 (888) 888 88 88</a>
+                    </div>
+                    <div class="links_block_link_wrapper adress_hidden">
+                        <a href="error.html" class="links_block_link">Схема проезда</a>
+                    </div>
+                </div>
+                <div class="links_block links_block_social">
+                    <div class="links_block_title">Мы в соцсетях:</div>
+                    <div class="links_block_link_wrapper">
+                        <a href="error.html" target="_blank" class="links_block_link">Яндекс.Дзен</a>
+                    </div>
+                    <div class="links_block_link_wrapper">
+                        <a href="error.html" target="_blank" class="links_block_link">Вконтакте</a>
+                    </div>
+                </div>
+                <div class="links_block">
+                    <div class="links_block_title">Как добраться:</div>
+                    <div class="links_block_link_wrapper">
+                        <a href="error.html" class="links_block_link">Схема проезда</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_rights">
+                <div class="footer_right">© 2021 IPhub. Все права защищены.</div>
+                <div class="footer_right">
+                    <a href="error.html" class="footer_right_link link_agreement">Политика обработки персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="scripts/cards.js"></script>
+
+</body>
+</html>
