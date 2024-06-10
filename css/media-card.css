@@ -1,4 +1,5 @@
-@media {
+@media screen and (max-width: 1000px) {
   .all__categories-elem {
+    height: 100px
   }
 }
