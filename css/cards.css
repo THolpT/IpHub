@@ -30,16 +30,6 @@
 	font-weight: 400;
 	font-style: normal
 }
-@font-face {
-	font-family: Gilroy;
-	src: url(../fonts/Gilroy-Heavy.eot);
-	src: url(../fonts/Gilroy-Heavy.eot?#iefix) format("embedded-opentype");
-	src: url(../fonts/Gilroy-Heavy.woff) format("woff");
-	src: url(../fonts/Gilroy-Heavy.ttf) format("truetype");
-	src: url(../fonts/Gilroy-Heavy.woff2) format("woff2");
-	font-weight: 400;
-	font-style: normal
-}
 * {
 	margin: 0;
 	padding: 0;
